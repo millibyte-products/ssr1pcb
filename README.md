@@ -26,7 +26,7 @@ A 12V, 5V, 3.3V and PD rail (20v) are exposed.
 Using the 3.3V power rail may adversely effect the operation of the ESP32.
 
 ## Pinout
-![hwv1 pinouts](SSR [1] PCB.png "Pinouts")
+![hwv1 pinouts](pinouts.png "Pinouts")
 1) ESP32 uses multiplexed peripherals, hardware assignments are recomended
 2) I2C Pins required to access encoder
 
