@@ -7,7 +7,7 @@ Device can draw up to 100W from a compatible power supply. Ensure all cabling an
 Device may present a shock hazard.
 
 ## Hardware V1.3
-![hardware v1 pcb](HWv1.3.png "Hardware Version 1.3")
+![hardware v1.3 pcb](HW_Front_1.3.jpg "Hardware Version 1.3")
 ### USB PD
 USB power delivery port can sink up to 5A at 20V, meeting the maximum 100W usb-c PD standard.
 A cable rated for 100W draw should be used. A power supply rated for 100W draw should be used.
@@ -26,7 +26,7 @@ A 12V, 5V, 3.3V and PD rail (20v) are exposed.
 Using the 3.3V power rail may adversely effect the operation of the ESP32.
 
 ## Pinout
-![hwv1.3 pinouts](pinouts.png "Pinouts")
+![hwv1.3 pinouts](SSR1PCB_1.3.png "Pinouts")
 1) ESP32 uses multiplexed peripherals, hardware assignments are recomended
 2) SPI (vspi) Pins required to access encoder
 
