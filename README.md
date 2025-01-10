@@ -9,21 +9,24 @@ Device may present a shock hazard.
 ## Hardware V1.3
 ![hardware v1.3 pcb](HW_Front_1.3.jpg "Hardware Version 1.3")
 ### USB PD
-USB power delivery port can sink up to 5A at 20V, meeting the maximum 100W usb-c PD standard.
-A cable rated for 100W draw should be used. A power supply rated for 100W draw should be used.
-Device does not operate as a source.
+USB power delivery port can sink up to 5A at 20V, meeting the maximum 100W USB PD standard.
+When operated at maximum power, a cable rated for 100W should be used and power supply rated for 100W should be used.
+Device does not operate as a power source.
+
+Device should require less than 45W during operation, however it is recommended to use at least a 65W rated power supply.
 ### USB Data
 A second usb port is used for data and low voltage programming.
 When using this port without the PD port, any motors or other high draw loads should be disconnected from the board.
-PD operation will energize the 5V power domain.
+PD operation will energize the 5V power domain, but is disconnected from the 5V rail of the port.
 ### External power
 The power regulators are exposed through user accessable pins.
-A 12V, 5V, 3.3V and PD rail (20v) are exposed.
-20V total draw should not exceed 5A. Note that pin headers may not be rated for more than 1A draw. 20V connections should not draw more than 1A.
-12V total draw should not exceed 3A. Not that pin headers may not be rated for more than 1A draw, 12V connections should not draw more than 1A.
-5V total draw should not exceed 1A. Note that pin headers may not be rated for more than 1A draw. 5V connections should not draw more than 1A.
-3.3V total draw should not exceed 1A. Note that pin headers may not be rated for more than 1A draw. 3.3V connections should not draw more than 500mA.
-Using the 3.3V power rail may adversely effect the operation of the ESP32.
+A 12V, 5V, 3.3V and PD rail (20V) are exposed.
+20V total draw should not exceed 5A.
+
+Note: most 2.54mm headers are not rated for more than 1A per pin. Excercise caution when drawing current from the power rails.
+:warning: The 12V power supply is limited to 3A internally, but may be limited by the maximum power of the PD interface during operation.
+:warning: The 5V power supply is limited to 3A internally, but may be limited by the maximum power of the PD interface during operation. The 3V3 supply depends on the 5V rail, and may be adversely effected by excessive current draw.
+:warning: The 3.3V total draw should not exceed 500mA. Using the 3.3V power rail may adversely effect the operation of the ESP32. Activating WiFi and/or bluetooth connections may increase the load on the 3.3V rail.
 
 ## Pinout
 ![hwv1.3 pinouts](SSR1PCB_1.3.png "Pinouts")
@@ -52,24 +55,25 @@ Using the 3.3V power rail may adversely effect the operation of the ESP32.
 |  34 |       RXD0   | UART (usb reserved)  |
 |  35 |       TXD0   | UART (usb reserved)  |
 |  36 |       GPIO22 | I2C SDA              |
-| --- | ------------ | -------------------- |
+
 
 ## Peripherals
 Onboard peripherals include 
-* MT6701QT-STD rotary encoder in SSI mode
-* DRV8313PWPR FOC controller
-* CP2102-GMR USB-UART transcoder/controller
+* MT6701QT-STD rotary encoder in SSI mode, wired to vpsi interface (GPIO5,18,19)
+* DRV8313PWPR FOC controller (GPIO2,4,16,17)
+* CP2102-GMR USB-UART transcoder/controller (TX,RX)
 
 ## Software
-See ![firmware](firmware/ "Firmware") folder for basic TCode implementation.
+See [firmware](firmware/) folder for basic TCode implementation.
 Built with Platformio.
 
 ### Troubleshooting/FAQ
-:My motor wont spin:
+:warning:
+#### My motor wont spin
 Check that the 20V rail is powered (USB PC) with a source that is 100W certified.
 Ensure cable used is 100W certified.
-:My motor wont spin/vibrates:
+#### My motor wont spin/vibrates
 Check that you have not screwed too far into the motor and damaged the coils.
 Replace motor if so.
-:My motor spins initially, then just vibrates:
+#### My motor spins initially, then just vibrates
 Check encoder magnet orientation. Incorrect orientation will cause unpredictable motor behavior. N/S poles must be orthogonal to encoder.

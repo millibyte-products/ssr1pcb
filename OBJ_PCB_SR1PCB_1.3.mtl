@@ -1,180 +1,88 @@
-newmtl mtl1
-Ka 0.62 0.62 0.36
-Kd 0.62 0.62 0.36
-Ks 0.00 0.00 0.00
-endmtl
-newmtl mtl2
-Ka 0.85 0.85 0.85
-Kd 0.85 0.85 0.85
-Ks 0.43 0.43 0.43
-endmtl
-newmtl mtl3
-Ka 1.00 1.00 1.00
-Kd 1.00 1.00 1.00
-Ks 0.50 0.50 0.50
-endmtl
-newmtl mtl4
-Ka 0.25 0.25 0.25
-Kd 0.25 0.25 0.25
-Ks 0.13 0.13 0.13
-endmtl
-newmtl mtl5
-Ka 0.18 0.18 0.18
-Kd 0.18 0.18 0.18
-Ks 0.05 0.05 0.05
-endmtl
-newmtl mtl6
-Ka 0.95 0.76 0.18
-Kd 0.95 0.76 0.18
-Ks 0.76 0.61 0.15
-endmtl
-newmtl mtl7
-Ka 0.00 0.00 0.00
-Kd 0.00 0.00 0.00
-Ks 0.00 0.00 0.00
-endmtl
-newmtl mtl8
-Ka 0.00 1.00 1.00
-Kd 0.00 1.00 1.00
-Ks 0.00 1.00 1.00
-endmtl
-newmtl mtl9
-Ka 0.21 0.21 0.21
-Kd 0.21 0.21 0.21
-Ks 0.02 0.02 0.02
-endmtl
-newmtl mtl10
-Ka 0.22 0.22 0.22
-Kd 0.22 0.22 0.22
-Ks 0.11 0.11 0.11
-endmtl
-newmtl mtl11
-Ka 0.65 0.52 0.00
-Kd 0.65 0.52 0.00
-Ks 0.45 0.36 0.00
-endmtl
-newmtl mtl12
-Ka 0.65 0.62 0.59
-Kd 0.65 0.62 0.59
-Ks 0.45 0.44 0.41
-endmtl
-newmtl mtl13
-Ka 0.35 0.35 0.35
-Kd 0.35 0.35 0.35
-Ks 0.02 0.02 0.02
-endmtl
-newmtl mtl14
-Ka 0.59 0.46 0.00
-Kd 0.59 0.46 0.00
-Ks 0.29 0.23 0.00
-endmtl
-newmtl mtl15
-Ka 1.00 1.00 1.00
-Kd 1.00 1.00 1.00
-Ks 0.88 0.88 0.88
-endmtl
-newmtl mtl16
-Ka 0.25 0.25 0.25
-Kd 0.25 0.25 0.25
-Ks 0.07 0.07 0.07
-endmtl
-newmtl mtl17
-Ka 0.77 0.77 0.77
-Kd 0.77 0.77 0.77
-Ks 0.62 0.62 0.62
-endmtl
-newmtl mtl18
-Ka 0.83 0.84 0.83
-Kd 0.83 0.84 0.83
-Ks 0.50 0.50 0.50
-endmtl
-newmtl mtl19
-Ka 0.07 0.07 0.07
-Kd 0.07 0.07 0.07
-Ks 0.00 0.00 0.00
-endmtl
-newmtl mtl20
-Ka 0.30 0.30 0.30
-Kd 0.30 0.30 0.30
-Ks 0.09 0.09 0.09
-endmtl
-newmtl mtl21
-Ka 0.67 0.67 0.67
-Kd 0.67 0.67 0.67
-Ks 0.47 0.47 0.47
-endmtl
-newmtl mtl22
-Ka 0.83 0.67 0.13
-Kd 0.83 0.67 0.13
-Ks 0.83 0.67 0.13
-endmtl
-newmtl mtl23
-Ka 0.56 0.56 0.56
-Kd 0.56 0.56 0.56
-Ks 0.28 0.28 0.28
-endmtl
-newmtl mtl24
-Ka 0.85 0.85 0.85
-Kd 0.85 0.85 0.85
-Ks 0.42 0.42 0.42
-endmtl
-newmtl mtl25
-Ka 0.45 0.43 0.42
-Kd 0.45 0.43 0.42
-Ks 0.03 0.03 0.03
-endmtl
-newmtl mtl26
-Ka 0.16 0.16 0.16
-Kd 0.16 0.16 0.16
-Ks 0.01 0.01 0.01
-endmtl
-newmtl mtl27
-Ka 0.22 0.22 0.22
-Kd 0.22 0.22 0.22
-Ks 0.01 0.01 0.01
-endmtl
-newmtl mtl28
-Ka 0.50 0.25 0.00
-Kd 0.50 0.25 0.00
-Ks 0.44 0.22 0.00
-endmtl
-newmtl mtl29
-Ka 0.75 0.75 0.75
-Kd 0.75 0.75 0.75
-Ks 0.38 0.38 0.38
-endmtl
-newmtl mtl30
-Ka 1.00 1.00 0.00
-Kd 1.00 1.00 0.00
-Ks 0.50 0.50 0.00
-endmtl
-newmtl mtl31
-Ka 0.75 1.00 0.75
-Kd 0.75 1.00 0.75
-Ks 0.38 0.50 0.38
-endmtl
-newmtl mtl32
-Ka 0.50 0.50 0.50
-Kd 0.50 0.50 0.50
-Ks 0.25 0.25 0.25
-endmtl
-newmtl mtl33
-Ka 1.00 0.65 0.00
-Kd 1.00 0.65 0.00
-Ks 0.50 0.33 0.00
-endmtl
-newmtl mtl34
-Ka 0.65 0.65 0.65
-Kd 0.65 0.65 0.65
-Ks 0.32 0.32 0.32
-endmtl
-newmtl mtl35
-Ka 0.78 0.78 0.78
-Kd 0.78 0.78 0.78
-Ks 0.39 0.39 0.39
-endmtl
-newmtl mtl36
-Ka 0.67 0.67 0.67
-Kd 0.67 0.67 0.67
-Ks 0.33 0.33 0.33
-endmtl
+# Exported from 3D Builder
+
+newmtl mtl3_0
+Kd 1.000000 1.000000 1.000000
+
+newmtl mtl4_0
+Kd 0.250000 0.250000 0.250000
+
+newmtl mtl2_0
+Kd 0.850000 0.850000 0.850000
+
+newmtl mtl21_0
+Kd 0.670000 0.670000 0.670000
+
+newmtl mtl22_0
+Kd 0.830000 0.670000 0.130000
+
+newmtl mtl9_0
+Kd 0.210000 0.210000 0.210000
+
+newmtl mtl30_0
+Kd 1.000000 1.000000 0.000000
+
+newmtl mtl7_0
+Kd 0.000000 0.000000 0.000000
+
+newmtl mtl31_0
+Kd 0.750000 1.000000 0.750000
+
+newmtl mtl1_0
+Kd 0.620000 0.620000 0.360000
+
+newmtl mtl6_0
+Kd 0.950000 0.760000 0.180000
+
+newmtl mtl10_0
+Kd 0.220000 0.220000 0.220000
+
+newmtl mtl29_0
+Kd 0.750000 0.750000 0.750000
+
+newmtl mtl14_0
+Kd 0.590000 0.460000 0.000000
+
+newmtl mtl33_0
+Kd 1.000000 0.650000 0.000000
+
+newmtl mtl26_0
+Kd 0.160000 0.160000 0.160000
+
+newmtl mtl5_0
+Kd 0.180000 0.180000 0.180000
+
+newmtl mtl23_0
+Kd 0.560000 0.560000 0.560000
+
+newmtl mtl17_0
+Kd 0.770000 0.770000 0.770000
+
+newmtl mtl11_0
+Kd 0.650000 0.520000 0.000000
+
+newmtl mtl12_0
+Kd 0.650000 0.620000 0.590000
+
+newmtl mtl13_0
+Kd 0.350000 0.350000 0.350000
+
+newmtl mtl18_0
+Kd 0.830000 0.840000 0.830000
+
+newmtl mtl20_0
+Kd 0.300000 0.300000 0.300000
+
+newmtl mtl19_0
+Kd 0.070000 0.070000 0.070000
+
+newmtl mtl35_0
+Kd 0.780000 0.780000 0.780000
+
+newmtl mtl25_0
+Kd 0.450000 0.430000 0.420000
+
+newmtl mtl34_0
+Kd 0.650000 0.650000 0.650000
+
+newmtl Turquoise_0
+Kd 0.000000 0.627451 0.909804
