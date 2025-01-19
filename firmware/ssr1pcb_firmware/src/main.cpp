@@ -30,18 +30,18 @@
 #define TCODE_VER "TCode v0.3"      // Current version of TCode
 
 // Set to 00000000 for no PCB
-#define PCB_VERSION 000102000
+#define PCB_VERSION 000103000
 
 #define Encoder_PWM_PIN -1  // PWM feedback pin (if used) - P pad on AS5048a
 #define ChipSelect_PIN \
     5  // SPI chip select pin - CSn on AS5048a (By default on ESP32-S3: MISO =
         // D13, MOSI = D11, CLK = D12)
 #define Enable_PIN 4       // Motor enable - EN on SFOCMini
-#define PWMchannel1_PIN 16  // Motor channel 1 - IN1 on SFOCMini
-#define PWMchannel2_PIN 17  // Motor channel 2 - IN2 on SFOCMini
-#define PWMchannel3_PIN 19  // Motor channel 3 - IN3 on SFOCMini
+#define PWMchannel1_PIN 2  // Motor channel 1 - IN1 on SFOCMini
+#define PWMchannel2_PIN 16  // Motor channel 2 - IN2 on SFOCMini
+#define PWMchannel3_PIN 17  // Motor channel 3 - IN3 on SFOCMini
 // HACK FOR PCB v1.2
-#define SSIData_PIN 23
+#define SSIData_PIN 19
 #define SSIClock_PIN 18
 
 // Drive Parameters
@@ -98,8 +98,10 @@
 #define CHANNELS 3  // Number of channels of each type (LRVA)
 
 // Libraries used
+#include <Wire.h>
 #include <EEPROM.h>     // Permanent memory
-#include <SimpleFOC.h>  // Motor controller code
+#include <BLDCMotor.h>  // Motor controller code
+#include <drivers/BLDCDriver3PWM.h>
 
 #include <SimpleFOCDrivers.h>
 #include <encoders/MT6701/MagneticSensorMT6701SSI.h>
@@ -255,7 +257,7 @@ class TCode {
     void ByteInput(byte inByte) {
         bufferString += (char)inByte;  // Add new character to string
 
-        if (inByte == '\n') {             // Execute string on newline
+        if (inByte == '\n' || inByte == '\r') {             // Execute string on newline
             bufferString.trim();          // Remove spaces, etc, from buffer
             executeString(bufferString);  // Execute string
             bufferString = "";            // Clear input string
@@ -668,8 +670,6 @@ volatile int shortest = 500;
 
 // Declare an SSI, PWM and SPI sensor. Only one will be used.
 MagneticSensorMT6701SSI sensorA = MagneticSensorMT6701SSI(ChipSelect_PIN);
-MagneticSensorPWM sensorA1 = MagneticSensorPWM(Encoder_PWM_PIN, 5, 928);
-MagneticSensorSPI sensorA2 = MagneticSensorSPI(ChipSelect_PIN, 14, 0x3FFF);
 // BLDC motor & driver instance
 BLDCMotor motorA = BLDCMotor(11, 11.1);
 BLDCDriver3PWM driverA = BLDCDriver3PWM(PWMchannel1_PIN, PWMchannel2_PIN,
@@ -688,8 +688,6 @@ unsigned long previousMillis =
     0;                     // variable to store the time of the last report
 const long interval = 10;  // interval at which to send reports (in ms)
 int counter = 0;
-
-SPIClass vspi(VSPI);
 
 // Setup function
 // This is run once, when the arduino starts
@@ -710,18 +708,7 @@ void setup() {
     mode = 0;
     
     // initialise encoder hardware
-    if (SensorA_UseMT6701) {
-        // Remap SPI pins for HWv1.2
-        vspi.setFrequency(1000000);
-        vspi.setDataMode(SPI_MODE2);
-        vspi.setBitOrder(SPI_MSBFIRST);
-        vspi.begin(SSIClock_PIN, SSIData_PIN, -1, -1);
-        sensorA.init(&vspi);
-    } else if (SensorA_UsePWM) {
-        sensorA1.init();
-    } else {
-        sensorA2.init();
-    }
+    sensorA.init();
 
     // driver config
     // power supply voltage [V]
@@ -739,11 +726,7 @@ void setup() {
     motorA.controller = MotionControlType::torque;
 
     // link the motor to the sensor
-    if (SensorA_UsePWM) {
-        motorA.linkSensor(&sensorA1);
-    } else {
-        motorA.linkSensor(&sensorA);
-    }
+    motorA.linkSensor(&sensorA);
     // link the motor and the driver
     motorA.linkDriver(&driverA);
 
@@ -758,16 +741,10 @@ void setup() {
     motorA.initFOC();
 
     // Set sensor angle and pre-set zero angle to current angle
-    if (SensorA_UseMT6701) {
-        sensorA.update();
-        zeroAngle = sensorA.getSensorAngle();
-    } else if (SensorA_UsePWM) {
-        sensorA1.update();
-        zeroAngle = sensorA1.getAngle();
-    } else {
-        sensorA2.update();
-        zeroAngle = sensorA2.getAngle();
-    }
+    
+    sensorA.update();
+    zeroAngle = sensorA.getSensorAngle();
+
     // Record start time
     startTime = millis();
 
@@ -796,16 +773,8 @@ void loop() {
 
     // Update sensor position
     float angle;
-    if (SensorA_UseMT6701) {
-        sensorA.update();
-        angle = sensorA.getAngle();
-    } else if (SensorA_UsePWM) {
-        sensorA1.update();
-        angle = sensorA1.getAngle();
-    } else {
-        sensorA2.update();
-        angle = sensorA2.getAngle();
-    }
+    sensorA.update();
+    angle = sensorA.getAngle();
     // Determine the linear position of the receiver in (0-10000)
     xPosition = (angle - zeroAngle) * ANG_TO_POS;
 
