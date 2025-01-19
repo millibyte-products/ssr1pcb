@@ -32,30 +32,30 @@ Note: most 2.54mm headers are not rated for more than 1A per pin. Excercise caut
 ![hwv1.3 pinouts](SSR1PCB_1.3.png "Pinouts")
 1) ESP32 uses multiplexed peripherals, hardware assignments are recomended
 2) SPI (vspi) Pins required to access encoder
+:warning: The labels on the PCB do not correspond to GPIOs
 
-| Pin | Arduino GPIO | Function/Description |
-| --- | ------------ | -------------------- |
-|   9 |       GPIO33 | User IO 4            |
-|  10 |       GPIO25 | User IO 3            |
-|  11 |       GPIO26 | User IO 2            |
-|  12 |       GPIO27 | User IO 1            |
-|  13 |       GPIO14 | User / Hall Effect   |
-|  14 |       GPIO12 | User IO 0            |
-|  13 |       GPIO13 | User IO 5            |
-|  23 |       GPIO15 | FOC N_FAULT          |
-|  24 |        GPIO2 | FOC IN1              |
-|  25 |         BOOT | BOOT                 |
-|  26 |        GPIO4 | FOC Enable           |
-|  27 |       GPIO16 | FOC IN2              |
-|  28 |       GPIO17 | FOC IN3              |
-|  29 |        GPIO5 | SSI/SPI CS           |
-|  30 |       GPIO18 | SSI/SPI CLK          |
-|  31 |       GPIO19 | SSI DATA/SPI MISO    |
-|  33 |       GPIO21 | I2C SCL              |
-|  34 |       RXD0   | UART (usb reserved)  |
-|  35 |       TXD0   | UART (usb reserved)  |
-|  36 |       GPIO22 | I2C SDA              |
-
+| Pin | Board Label | Arduino GPIO | Function/Description |
+| --- | ----------- | ------------ | -------------------- |
+|   9 |         IO4 |       GPIO33 | User IO 4            |
+|  10 |         IO3 |       GPIO25 | User IO 3            |
+|  11 |         IO2 |       GPIO26 | User IO 2            |
+|  12 |         IO1 |       GPIO27 | User IO 1            |
+|  13 |        HALL |       GPIO14 | User / Hall Effect   |
+|  14 |         IO0 |       GPIO12 | User IO 0            |
+|  13 |         IO5 |       GPIO13 | User IO 5            |
+|  23 |           - |       GPIO15 | FOC N_FAULT          |
+|  24 |           - |        GPIO2 | FOC IN1              |
+|  25 |        BOOT |         BOOT | BOOT                 |
+|  26 |           - |        GPIO4 | FOC Enable           |
+|  27 |           - |       GPIO16 | FOC IN2              |
+|  28 |           - |       GPIO17 | FOC IN3              |
+|  29 |           - |        GPIO5 | SSI/SPI CS           |
+|  30 |           - |       GPIO18 | SSI/SPI CLK          |
+|  31 |           - |       GPIO19 | SSI DATA/SPI MISO    |
+|  33 |         SCL |       GPIO21 | I2C SCL              |
+|  34 |           - |       RXD0   | UART (usb reserved)  |
+|  35 |           - |       TXD0   | UART (usb reserved)  |
+|  36 |         SDA |       GPIO22 | I2C SDA              |
 
 ## Peripherals
 Onboard peripherals include 
