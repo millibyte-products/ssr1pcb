@@ -77,3 +77,6 @@ Check that you have not screwed too far into the motor and damaged the coils.
 Replace motor if so.
 #### My motor spins initially, then just vibrates
 Check encoder magnet orientation. Incorrect orientation will cause unpredictable motor behavior. N/S poles must be orthogonal to encoder.
+#### My device is stuct in bootloader when connected to PD only
+This is a hardware bug. It is fixed in HWv1.4 or later.
+Users may remove C8 (on the underside, near the usb ports) at their own risk. Desolder the cap, or cut it, being careful not to damage the pads or traces.
