@@ -45,7 +45,8 @@
 #define SSIClock_PIN 18
 
 // Drive Parameters
-#define MotorA_Voltage 20  // Motor operating voltage (12-20V)
+#define MotorA_Supply 20
+#define MotorA_Voltage 12  // Motor operating voltage (12-20V)
 #define MotorA_Current 1   // Maximum operating current (Amps)
 // The control code needs to know the angle of the motor relative to the encoder
 // - "Zero elec. angle". If a value is not entered it will perform a quick
@@ -510,6 +511,7 @@ class TCode {
                     break;
 
                 case 2:
+                    halted = false;
                     for (i = 0; i < 10; i++) {
                         axisRow("L" + String(i), 8 * i, Linear[i].Name);
                     }
@@ -712,9 +714,9 @@ void setup() {
 
     // driver config
     // power supply voltage [V]
-    driverA.voltage_power_supply = MotorA_Voltage;
+    driverA.voltage_power_supply = MotorA_Supply;
     // Max DC voltage allowed - default voltage_power_supply
-    driverA.voltage_limit = 20;
+    driverA.voltage_limit = MotorA_Voltage;
     // driver init
     driverA.init();
 
@@ -738,6 +740,7 @@ void setup() {
     } else {
         motorA.useMonitoring(Serial);
     }
+    motorA.voltage_sensor_align = MotorA_Voltage / 2;
     motorA.initFOC();
 
     // Set sensor angle and pre-set zero angle to current angle
