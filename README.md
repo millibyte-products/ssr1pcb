@@ -7,7 +7,7 @@ Device can draw up to 100W from a compatible power supply. Ensure all cabling an
 Device may present a shock hazard.
 
 ## Hardware V1.3
-![hardware v1.3 pcb](HW_Front_1.3.jpg "Hardware Version 1.3")
+![hardware v1.3 pcb](HWv1.3/HW_Front_1.3.jpg "Hardware Version 1.3")
 ### USB PD
 USB power delivery port can sink up to 5A at 20V, meeting the maximum 100W USB PD standard.
 When operated at maximum power, a cable rated for 100W should be used and power supply rated for 100W should be used.
@@ -29,7 +29,7 @@ Note: most 2.54mm headers are not rated for more than 1A per pin. Excercise caut
 :warning: The 3.3V total draw should not exceed 500mA. Using the 3.3V power rail may adversely effect the operation of the ESP32. Activating WiFi and/or bluetooth connections may increase the load on the 3.3V rail.
 
 ## Pinout
-![hwv1.3 pinouts](SSR1PCB_1.3.png "Pinouts")
+![hwv1.3 pinouts](HWv1.3/SSR1PCB_1.3.png "Pinouts")
 1) ESP32 uses multiplexed peripherals, hardware assignments are recomended
 2) SPI (vspi) Pins required to access encoder
 :warning: The labels on the PCB do not correspond to GPIOs
@@ -77,6 +77,7 @@ Check that you have not screwed too far into the motor and damaged the coils.
 Replace motor if so.
 #### My motor spins initially, then just vibrates
 Check encoder magnet orientation. Incorrect orientation will cause unpredictable motor behavior. N/S poles must be orthogonal to encoder.
-#### My device is stuct in bootloader when connected to PD only
+#### My device is stuck in bootloader when connected to PD only
 This is a hardware bug. It is fixed in HWv1.4 or later.
+Pressing the reset (EN) button should reboot the device into normal operation.
 Users may remove C8 (on the underside, near the usb ports) at their own risk. Desolder the cap, or cut it, being careful not to damage the pads or traces.
