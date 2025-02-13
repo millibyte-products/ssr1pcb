@@ -55,10 +55,10 @@
 // one direction the angle is out of alignment, try increasing or decreasing it
 // by small increments (eg +/- 0.1).
 #define MotorA_ParametersKnown \
-    false  // Once you know the zero elec angle for the motor enter it below and
+    false // Once you know the zero elec angle for the motor enter it below and
            // set this flag to true.
 #define MotorA_ZeroElecAngle \
-    2.75  // This number is the zero angle (in radians) for the motor relative
+    2.15  // This number is the zero angle (in radians) for the motor relative
           // to the encoder.
 #define MotorA_SensorDirection \
     Direction::CW  // Do not change. If the motor is showing CCW rotate the
