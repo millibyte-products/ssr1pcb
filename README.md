@@ -70,12 +70,11 @@ Built with Platformio.
 ### Flashing
 Obtain [esptool](https://github.com/espressif/esptool/releases) or if you don't have  a python installation, try [esptool-standalone](https://github.com/mgiachetti/esptool-standalone)
 Download a [release binary](https://github.com/millibyte-products/ssr1pcb/releases/latest/download/firmware-blob.zip)
-Unzip and open a command-line/terminal in the unzipped folder
+Unzip and open a command-line/terminal in the unzipped folder.
 Execute the following from that command line:
 ```
 esptool.exe --chip esp32 --baud 460800 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 firmware.bin
 ```
-Relpace `<path-to-downloaded-and-unziped>` with the actual system-specific path to your downloaded firmware bin file.
 
 ### Troubleshooting/FAQ
 :warning:
