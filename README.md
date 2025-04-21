@@ -3,8 +3,8 @@ An ESP32 Motor Control board for the TMAx SR1.
 Integrates USB Power Delivery at 100W (use appropriate cabling)
 
 :warning: **This device can use dangerous amounts of power**: Device may become very hot in use and may present a fire hazard. Operate at own risk.
-Device can draw up to 100W from a compatible power supply. Ensure all cabling and any power devices are rated for this much power dissipation.
-Device may present a shock hazard.
+Device can draw up to 100W from a compatible power supply. Ensure all cabling and any power devices are rated for 100W (20V at 5A).
+Device may present a shock hazard. Device may present a burn hazard.
 
 ## Hardware V1.3
 ![hardware v1.3 pcb](HWv1.3/HW_Front_1.3.jpg "Hardware Version 1.3")
@@ -13,7 +13,8 @@ USB power delivery port can sink up to 5A at 20V, meeting the maximum 100W USB P
 When operated at maximum power, a cable rated for 100W should be used and power supply rated for 100W should be used.
 Device does not operate as a power source.
 
-Device should require less than 45W during operation, however it is recommended to use at least a 65W rated power supply.
+A 65W rated power supply may function, but is not recommended.
+
 ### USB Data
 A second usb port is used for data and low voltage programming.
 When using this port without the PD port, any motors or other high draw loads should be disconnected from the board.
@@ -66,6 +67,8 @@ Onboard peripherals include
 ## Software
 See [firmware](firmware/) folder for basic TCode implementation.
 Built with Platformio.
+
+Alternatively the third party TCodeESP32 firmware may be used. Select the SSR1PCB under board type.
 
 ### Flashing
 Obtain [esptool](https://github.com/espressif/esptool/releases) or if you don't have  a python installation, try [esptool-standalone](https://github.com/mgiachetti/esptool-standalone)
