@@ -46,7 +46,7 @@
 
 // Drive Parameters
 #define MotorA_Supply 20
-#define MotorA_Voltage 12  // Motor operating voltage (12-20V)
+#define MotorA_Voltage 20  // Motor operating voltage (16-20V)
 #define MotorA_Current 1   // Maximum operating current (Amps)
 // The control code needs to know the angle of the motor relative to the encoder
 // - "Zero elec. angle". If a value is not entered it will perform a quick
