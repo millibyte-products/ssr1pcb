@@ -31,7 +31,7 @@ Note: most 2.54mm headers are not rated for more than 1A per pin. Excercise caut
 
 Fan voltage may be selected by using the on board switch. Voltage is switchable between 5V and 12V. Do not use a 5V rated fan with a selected voltage of 12V.
 ## Pinout
-![hwv1.6 pinouts](hardware/SSR1PCB_1.6_pinout.png "Pinouts")
+![hwv1.6 pinouts](hardware/SR1PCB_1.6_pinout.png "Pinouts")
 1) ESP32 uses multiplexed peripherals, hardware assignments are recomended
 2) SPI (vspi) Pins required to access encoder
 :warning: The labels on the PCB do not correspond to GPIOs
