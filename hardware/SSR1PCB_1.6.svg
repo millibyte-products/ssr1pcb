@@ -29,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0326798"
-     inkscape:cx="312.89103"
-     inkscape:cy="131.98693"
+     inkscape:cx="506.5619"
+     inkscape:cy="441.86033"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -15657,6 +15657,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO14</tspan></text>
 
+
 </g><g
    id="g17170-9"
    transform="translate(-66.83976,-136.58502)"
@@ -15679,6 +15680,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">GND</tspan></text>
 
+
 </g><g
    id="g17208"
    transform="translate(-67.10328,-106.34341)"
@@ -15700,6 +15702,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722">13</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -15749,6 +15752,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO12</tspan></text>
 
+
 </g><g
    id="g17208-7"
    transform="translate(-66.63528,-90.841998)"
@@ -15770,6 +15774,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-6">14</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -15819,6 +15824,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO27</tspan></text>
 
+
 </g><g
    id="g17208-2"
    transform="translate(-67.14582,-76.018548)"
@@ -15840,6 +15846,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-0">12</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -15889,6 +15896,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO26</tspan></text>
 
+
 </g><g
    id="g17208-7-4"
    transform="translate(-66.67783,-60.51713)"
@@ -15911,6 +15919,7 @@
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-6-0">11</tspan></text>
 
+
 </g><g
    transform="translate(-94.10328,-121.58002)"
    id="g17280"
@@ -15932,6 +15941,7 @@
      x="396.39893"
      y="625.69336"
      style="font-size:10.2979px;line-height:1.25">3V3</tspan></text>
+
 
 </g><path
    inkscape:connector-curvature="0"
@@ -15962,6 +15972,7 @@
      y="623.69342"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><g
    transform="translate(290.20831,-8.8781399)"
    id="g17356"
@@ -15983,6 +15994,7 @@
      sodipodi:role="line"
      style="font-size:9.84674px;line-height:1.25"
      id="tspan12335">3V3</tspan></text>
+
 
 </g><path
    style="fill:#4e4c4c;fill-opacity:1;fill-rule:evenodd;stroke:#4e4c4c;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -16020,6 +16032,7 @@
      y="623.69342"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><g
    id="g17170-4"
    transform="translate(289.268,-25.40239)"
@@ -16041,6 +16054,7 @@
      id="tspan17176-6"
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">GND</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#90d5c9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -16188,6 +16202,7 @@
      y="623.69342"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><g
    transform="translate(289.7824,80.453073)"
    id="g17356-0"
@@ -16209,6 +16224,7 @@
      sodipodi:role="line"
      style="font-size:9.84674px;line-height:1.25"
      id="tspan12598">20V</tspan></text>
+
 
 </g><path
    style="fill:#4e4c4c;fill-opacity:1;fill-rule:evenodd;stroke:#4e4c4c;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
@@ -16239,6 +16255,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><path
    inkscape:connector-curvature="0"
    id="path17396-8"
@@ -16268,6 +16285,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">GND</tspan></text>
 
+
 </g><g
    id="g17170-4-2-4"
    transform="translate(289.26801,63.779423)"
@@ -16289,6 +16307,7 @@
      id="tspan17176-6-9-1"
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">GND</tspan></text>
+
 
 </g><g
    transform="translate(290.84732,20.39263)"
@@ -16312,6 +16331,7 @@
      style="font-size:9.84674px;line-height:1.25"
      id="tspan12557">5V</tspan></text>
 
+
 </g><g
    transform="translate(317.96882,80.603393)"
    id="g17356-7-8"
@@ -16333,6 +16353,7 @@
      sodipodi:role="line"
      style="font-size:9.84674px;line-height:1.25"
      id="tspan12639">USB</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -16382,6 +16403,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO25</tspan></text>
 
+
 </g><g
    id="g17208-8"
    transform="translate(-66.98855,-46.370068)"
@@ -16403,6 +16425,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-4">10</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -16452,6 +16475,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO33</tspan></text>
 
+
 </g><g
    id="g17208-7-8"
    transform="translate(-66.52056,-30.868654)"
@@ -16473,6 +16497,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-6-1">9</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -16519,6 +16544,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan13297">M2</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -16571,6 +16597,7 @@
      style="font-size:10.2979px;line-height:1.25"
      id="tspan13301" /></text>
 
+
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
    id="circle17180-41"
@@ -16619,6 +16646,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO13</tspan></text>
 
+
 </g><g
    id="g17208-6"
    transform="translate(-67.43433,-16.330959)"
@@ -16640,6 +16668,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-8">16</tspan></text>
+
 
 </g><circle
    style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -16686,6 +16715,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25"
      id="tspan12722-6-06">M1</tspan></text>
+
 
 </g><g
    id="g22936"><polygon
@@ -16928,6 +16958,7 @@
      y="623.69342"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><g
        transform="translate(-42.253578,109.29506)"
        id="g17356-2"
@@ -16949,6 +16980,7 @@
      sodipodi:role="line"
      style="font-size:9.84674px;line-height:1.25"
      id="tspan12335-5">3V3</tspan></text>
+
 
 </g><path
        style="fill:#4e4c4c;fill-opacity:1;fill-rule:evenodd;stroke:#4e4c4c;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
@@ -17039,6 +17071,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">GND</tspan></text>
 
+
 </g></g><g
      id="g15958-2-60-9"
      transform="rotate(-90,374.55477,672.52673)"
@@ -17062,6 +17095,7 @@
      id="tspan15968-2-8-2"
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO21</tspan></text>
+
 
 </g><g
      id="g15958-2-60-9-4"
@@ -17088,6 +17122,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">SCL</tspan></text>
 
+
 </g><g
      id="g15958-2-60-9-1"
      transform="rotate(-90,397.23856,679.68537)"
@@ -17113,6 +17148,7 @@
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">SDA</tspan></text>
 
+
 </g><g
      id="g15958-2-60-9-6"
      transform="rotate(-90,381.99638,665.08513)"
@@ -17136,6 +17172,7 @@
      id="tspan15968-2-8-2-0"
      sodipodi:role="line"
      style="font-size:8.91921px;line-height:1.25">IO22</tspan></text>
+
 
 </g><polygon
      c_etype="pad_shell"
@@ -17391,6 +17428,7 @@
      y="623.69342"
      style="font-size:10.2979002px;line-height:1.25">9</tspan></text>
 
+
 </g><path
    style="fill:#4e4c4c;fill-opacity:1;fill-rule:evenodd;stroke:#4e4c4c;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
    d="M 316.81583,730.29504 H 281.37128"
@@ -17480,6 +17518,7 @@
      sodipodi:role="line"
      style="font-size:10.2979002px;line-height:1.25">GND</tspan></text>
 
+
 </g><g
    transform="matrix(1.0070168,0,0,0.92698708,-45.44953,153.14544)"
    id="g17356-7-6"
@@ -17502,6 +17541,7 @@
      style="font-size:9.84673977px;line-height:1.25"
      id="tspan12557-5">5V</tspan></text>
 
+
 </g><g
    transform="matrix(0.92698708,0,0,0.92698708,16.302072,152.77615)"
    id="g17356-7-6-7"
@@ -17523,6 +17563,7 @@
      sodipodi:role="line"
      style="font-size:9.84673977px;line-height:1.25"
      id="tspan20586">12V</tspan></text>
+
 
 </g><g
    transform="rotate(-180,248.75063,643.16274)"
@@ -17550,6 +17591,7 @@
      sodipodi:role="line"
      style="font-size:8.91921043px;line-height:1.25;stroke-width:1px">IO32</tspan></text>
 
+
 </g><text
    transform="scale(-1)"
    id="text15966-9-99-0-7"
@@ -17562,6 +17604,7 @@
      id="tspan15968-2-8-2-1"
      sodipodi:role="line"
      style="font-size:8.91921043px;line-height:1.25;stroke-width:1px">IO35</tspan></text>
+
 
 </g></g><text
    xml:space="preserve"
@@ -17578,6 +17621,7 @@
      x="318.53934"
      y="403.4173">SSR1PCB HWv1.6 Pinout</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-size:12.5px;fill:#cccccc;stroke-width:5.175"
@@ -17591,6 +17635,7 @@
      x="-702.45294"
      y="768.61816">1 A Max current</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-size:12.5px;fill:#4d4d4d;stroke-width:5.175"
@@ -17602,6 +17647,7 @@
      style="stroke-width:5.175"
      x="760.37128"
      y="496.27557" /></text>
+
 
 <text
    xml:space="preserve"
@@ -17616,6 +17662,7 @@
      x="-1086.4752"
      y="-433.35095">{</tspan></text>
 
+
 <text
    xml:space="preserve"
    style="font-size:10px;fill:#cccccc;stroke-width:5.17500019"
@@ -17627,6 +17674,7 @@
      style="font-size:10px;fill:#000000;stroke-width:5.17500019"
      x="208.51299"
      y="886.06128">Selectable via Switch</tspan></text>
+
 
 </g><circle
      style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#90d5c9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.728;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
@@ -17735,6 +17783,7 @@
      y="623.69342"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><g
      transform="translate(290.25827,-236.73182)"
      id="g17356-0-8"
@@ -17756,6 +17805,7 @@
      sodipodi:role="line"
      style="font-size:9.84674px;line-height:1.25"
      id="tspan20174">12V</tspan></text>
+
 
 </g><path
      style="fill:#4e4c4c;fill-opacity:1;fill-rule:evenodd;stroke:#4e4c4c;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;shape-rendering:crispEdges"
@@ -17786,6 +17836,7 @@
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">9</tspan></text>
 
+
 </g><g
      id="g17170-4-2-4-0"
      transform="translate(289.74388,-253.40547)"
@@ -17807,6 +17858,7 @@
      id="tspan17176-6-9-1-3"
      sodipodi:role="line"
      style="font-size:10.2979px;line-height:1.25">GND</tspan></text>
+
 
 </g><style
      type="text/css"
