@@ -68,8 +68,27 @@ Onboard peripherals include
 * CP2102-GMR USB-UART transcoder/controller (TX,RX)
 
 ## Software
-We recommend the use of [TCodeESP32 firmware](https://github.com/jcfain/TCodeESP32).
+We recommend the use of [TCodeESP32 firmware](https://github.com/jcfain/TCodeESP32/releases/tag/v0.47b).
+At time of writing, the current version is v0.47b. This release includes esptool utilities for windows and a flashing executable. See repositiory for details and instructions
+
+### Browser-based Configuration
 After flashing the device and configuring the wifi, navigate to the settings page (tcode.local or via the device IP) and select SSR1PCB from the device type dropdown. The device must be restarted before settings will apply.
+
+### Manual (serial) Configuration
+For manual setup, connect to the device with a serial terminal program (`PuTTY`, `screen`, or other application), the default baud rate is 115200.
+To setup wifi:
+```
+#wifi-ssid <your wifi name>
+#wifi-pass <yor wifi password>
+$save
+#restart
+```
+To set SSR1 board configuration
+```
+#board-type 5
+$save
+#restart
+```
 
 ### Basic firmware
 See [firmware](firmware/) folder for basic TCode implementation.
