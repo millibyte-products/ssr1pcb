@@ -84,7 +84,7 @@ Execute `flash.bat` or `flash.sh`, whichever is appropriate for your operating s
 
 Alternatively, execute the following from that command line:
 ```
-esptool.exe --chip esp32 --baud 460800 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 firmware.bin
+esptool --chip esp32 --baud 460800 --before default_reset --after hard_reset write_flash -z --flash_mode dio --flash_freq 40m --flash_size detect 0x1000 bootloader.bin 0x8000 partitions.bin 0xe000 boot_app0.bin 0x10000 firmware.bin
 ```
 
 ### Troubleshooting/FAQ
@@ -102,3 +102,5 @@ A cube magnet is recommended for ease of alignment. Rotate your magnet until a c
 This is a hardware bug. It is fixed in HWv1.4 or later. Do not follow these insructions for HWv1.4+
 Pressing the reset (EN) button should reboot the device into normal operation.
 Users may remove C8 (on the underside, near the usb ports) at their own risk. Desolder the cap, or cut it, being careful not to damage the pads or traces.
+#### My device is getting very hot with only USB data connected
+Some USB power supplies can overdrive the 3v3 rail. This can be mitigated by cutting the 3v3 line that supplies the CP2102. This does not impact the function of the device.
