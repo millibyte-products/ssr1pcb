@@ -69,6 +69,7 @@ Onboard peripherals include
 
 ## Software
 We recommend the use of [TCodeESP32 firmware](https://github.com/jcfain/TCodeESP32/releases/tag/v0.47b).
+The hardware variant `esp32doit-devkit-v1-bldc` is compatible with the SSR1PCB, but requires configuration for proper operation.
 At time of writing, the current version is v0.47b. This release includes esptool utilities for windows and a flashing executable. See repositiory for details and instructions
 
 ### Browser-based Configuration
