@@ -95,6 +95,7 @@ $save
 These instructions do not apply if using `TCodeESP32` firmware.
 For a limited function, serial-only firmware, see [firmware](firmware/) folder for basic TCode implementation.
 Built with Platformio, see [platformio.org](https://platformio.org/) for documentation.
+- It is recommended to run any `Clean` tasks after any changes to the codebase
 1) Open the `firmware` folder in visual studio code/platformio.
 2) Navigate to platformio project tasks, select the `esp32` project task and `General` group and run `build`
     - (Optional) Navigate to the `esp32` project task and `Platform` group, and run `Build Filesystem Image`

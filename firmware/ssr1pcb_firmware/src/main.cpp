@@ -70,6 +70,30 @@
     false  // SPI feedback on the AS5048a is default because it's a lot smoother
            // and quieter! Change this to true if you want to use PWM feedback.
 
+// Control constants
+// (a.k.a. magic numbers for Eve)
+#define RAIL_LENGTH 125          // Physical maximum travel of the receiver (mm)
+#define STROKE_LENGTH 120        // Operating stroke length (mm)
+#define PULLEY_CIRCUMFERENCE 60  // Drive pulley circumference (mm)
+#define P_CONST 0.002            // Motor PID proportional constant
+#define LOW_PASS \
+    0.8  // Low pass filter factor for static noise reduction ( number < 1, 0 =
+         // none)
+// Derived constants
+#define ANG_TO_POS                   \
+    (10000 * PULLEY_CIRCUMFERENCE) / \
+        (2 * 3.14159 * STROKE_LENGTH)  // Number to convert a motor angle to a
+                                       // 0-10000 axis position
+#define START_OFFSET                              \
+    2 * 3.14159 * (RAIL_LENGTH - STROKE_LENGTH) / \
+        (2 *                                      \
+         PULLEY_CIRCUMFERENCE)  // Offset angle from endstop on startup (rad)
+
+// Other functions
+#define MIN_SMOOTH_INTERVAL \
+    3  // Minimum auto-smooth ramp interval for live commands (ms)
+#define MAX_SMOOTH_INTERVAL \
+    100  // Maximum auto-smooth ramp interval for live commands (ms)
 
 // T-Code Channels
 #define CHANNELS 3  // Number of channels of each type (LRVA)
