@@ -91,13 +91,22 @@ $save
 #restart
 ```
 
-### Basic firmware
-See [firmware](firmware/) folder for basic TCode implementation.
+### (Alternative) Basic firmware
+These instructions do not apply if using `TCodeESP32` firmware.
+For a limited function, serial-only firmware, see [firmware](firmware/) folder for basic TCode implementation.
 Built with Platformio, see [platformio.org](https://platformio.org/) for documentation.
+1) Open the `firmware` folder in visual studio code/platformio.
+2) Navigate to platformio project tasks, select the `esp32` project task and `General` group and run `build`
+    - (Optional) Navigate to the `esp32` project task and `Platform` group, and run `Build Filesystem Image`
+3) After build, connect your device via usb (ensure a serial port is detected, a COM port on windows, or /dev/ttyUSB* on linux)
+4) Navigate to platformio project tasks, select the `esp32` project task and `General` group and run `upload`
+    - (Optional) Navigate to the `esp32` project task and `Platform` group and run `Upload Filesystem Image`
+The `Monitor` and/or `Upload and Monitor` tasks can provide a crude serial terminal. However platformio's serial console may not function properly without advanced configuration.
 
-#### Flashing
+#### Manual Flashing
+This section only applies to basic millibyte firmware. For third-party flashing instructions, refer to the third-party documentiation.
+Build the firmware first, see [Basic firmware](#basic-firmware)
 Obtain [esptool](https://github.com/espressif/esptool/releases) or if you don't have  a python installation, try [esptool-standalone](https://github.com/mgiachetti/esptool-standalone)
-Download a [release binary](https://github.com/millibyte-products/ssr1pcb/releases/latest/download/firmware-blob.zip)
 Unzip and open a command-line/terminal in the unzipped folder.
 `esptool` must be on your system `PATH`.
 Execute `flash.bat` or `flash.sh`, whichever is appropriate for your operating system.
